@@ -1,0 +1,157 @@
+.container {
+  margin-top: 80px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f1f1f1;
+}
+
+.title h1 {
+  color: #0cc0df;
+}
+
+p,
+h3 {
+  font-size: large;
+  text-align: justify;
+}
+
+.hero {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hero img {
+  width: 600px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.order-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.order-button {
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  background: #f1f1f1;
+  color: #0097b2;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.order-button:hover {
+  background: #0cc0df;
+  color: white;
+}
+
+.order-button[disabled]:hover {
+  background: #f1f1f1;
+  color: #0097b2;
+}
+
+.hero-text-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.card h3 {
+  color: #0097b2;
+}
+
+.card p {
+  margin: 0.7rem 0;
+  text-align: justify;
+}
+
+.card a {
+  color: #0097b2;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 3rem;
+  background: #f1f1f1;
+}
+
+section h1 {
+  font-size: 32px;
+}
+
+.grid {
+  margin-block: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.info-banner {
+  padding: 1rem;
+  background-color: #ffffa7;
+}
+
+.info-banner a {
+  color: #0097b2;
+  text-decoration: underline;
+}
+
+@media (max-width: 1250px) {
+  .hero img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .order-button-container {
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
